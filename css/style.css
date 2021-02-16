@@ -73,6 +73,7 @@ The transform element is in relation to itself.
   background: rgba(243, 204, 227, 0.4);
   padding: 30px;
   text-align: center;
+  border: solid rgba(148, 11, 92, 0.35) 1px;
 }
 
 /*
@@ -84,6 +85,7 @@ This is the fix.
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 30px;
 }
 
 .heading-primary-main {
@@ -96,11 +98,20 @@ This is the fix.
   animation-timing-function: ease-in-out;
 }
 
-.heading-primary-sub {
+.heading-primary-sub1 {
   display: block;
-  font-size: 20px;
+  font-size: 17.5px;
   font-weight: 700;
   letter-spacing: 15px;
+  animation: moveInRight 1s ease-out;
+}
+
+.heading-primary-sub2 {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 15px;
+  padding-top: 10px;
   animation: moveInRight 1s ease-out;
 }
 
@@ -137,4 +148,29 @@ animation-iteration-count:3;
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 35px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
