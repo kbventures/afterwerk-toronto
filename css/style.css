@@ -90,9 +90,9 @@ This is the fix.
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 25px;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -104,6 +104,7 @@ This is the fix.
   font-weight: 700;
   letter-spacing: 15px;
   animation: moveInRight 1s ease-out;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .heading-primary-sub2 {
@@ -150,14 +151,26 @@ animation-iteration-count:3;
   }
 }
 
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translatey(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 35px;
+  padding: 5px 30px;
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
+  position: relative;
 }
 
 .btn:hover {
@@ -171,6 +184,35 @@ animation-iteration-count:3;
 }
 
 .btn-white {
+  border: solid rgba(148, 11, 92, 0.35) 1px;
   background-color: #fff;
   color: #777;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:hover::after {
+  transform: scalex(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+/* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/
+.btn-animated {
+  animation: moveInButton 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
