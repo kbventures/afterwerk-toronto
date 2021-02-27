@@ -53,14 +53,14 @@ body {
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   max-width: 2rem;
   position: absolute;
   top: 2.5rem;
   left: 2.5rem;
 }
 
-.logo {
+.header__logo {
   height: 10rem;
 }
 
@@ -72,7 +72,7 @@ body {
 which is relative to the body.  
 The transform element is in relation to itself.
 */
-.text-box {
+.header__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -95,7 +95,7 @@ This is the fix.
   margin-bottom: 3rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 5rem;
   font-weight: 400;
@@ -106,7 +106,7 @@ This is the fix.
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
-.heading-primary-sub1 {
+.heading-primary--sub1 {
   display: block;
   font-size: 1.75rem;
   font-weight: 700;
@@ -115,7 +115,7 @@ This is the fix.
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
-.heading-primary-sub2 {
+.heading-primary--sub2 {
   display: block;
   font-size: 2rem;
   font-weight: 900;
@@ -193,7 +193,7 @@ animation-iteration-count:3;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   border: solid rgba(148, 11, 92, 0.35) 0.1rem;
   background-color: #fff;
   color: #777;
@@ -217,12 +217,12 @@ animation-iteration-count:3;
   opacity: 0;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
 /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/
-.btn-animated {
+.btn--animated {
   animation: moveInButton 0.55s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
