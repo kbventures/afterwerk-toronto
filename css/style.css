@@ -16,20 +16,27 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
   background-color: #f1e8ed;
+  box-sizing: border-box;
 }
 
 .header {
@@ -49,12 +56,12 @@ body {
 .logo-box {
   max-width: 2rem;
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 2.5rem;
+  left: 2.5rem;
 }
 
 .logo {
-  height: 100px;
+  height: 10rem;
 }
 
 /* .logo:hover {
@@ -71,7 +78,7 @@ The transform element is in relation to itself.
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(243, 204, 227, 0.4);
-  padding: 30px;
+  padding: 3rem;
   text-align: center;
   border: solid rgba(148, 11, 92, 0.35) 1px;
 }
@@ -85,35 +92,35 @@ This is the fix.
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 25px;
+  letter-spacing: 2.5rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 .heading-primary-sub1 {
   display: block;
-  font-size: 17.5px;
+  font-size: 1.75rem;
   font-weight: 700;
-  letter-spacing: 15px;
+  letter-spacing: 1.5rem;
   animation: moveInRight 1s ease-out;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 .heading-primary-sub2 {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 15px;
-  padding-top: 10px;
+  letter-spacing: 1.5rem;
+  padding-top: 1remm;
   animation: moveInRight 1s ease-out;
 }
 
@@ -125,10 +132,10 @@ animation-iteration-count:3;
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -140,10 +147,10 @@ animation-iteration-count:3;
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -155,7 +162,7 @@ animation-iteration-count:3;
 @keyframes moveInButton {
   0% {
     opacity: 0;
-    transform: translatey(30px);
+    transform: translatey(3rem);
   }
   100% {
     opacity: 1;
@@ -167,26 +174,27 @@ animation-iteration-count:3;
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 5px 30px;
+  padding: 0.5rem 3rem;
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
   font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
-  border: solid rgba(148, 11, 92, 0.35) 1px;
+  border: solid rgba(148, 11, 92, 0.35) 0.1rem;
   background-color: #fff;
   color: #777;
 }
@@ -196,7 +204,7 @@ animation-iteration-count:3;
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
