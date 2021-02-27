@@ -96,6 +96,7 @@ This is the fix.
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .heading-primary-sub1 {
@@ -171,6 +172,7 @@ animation-iteration-count:3;
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
+  font-weight: 700;
 }
 
 .btn:hover {
@@ -213,6 +215,6 @@ animation-iteration-count:3;
 
 /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/
 .btn-animated {
-  animation: moveInButton 0.5s ease-out 0.75s;
+  animation: moveInButton 0.55s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
