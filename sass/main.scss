@@ -1,41 +1,62 @@
+$color-primary-light: #f3cce3;
+$color-primary-dark: #d2037c;
+
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   background-color: #f1e8ed;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #f3cce3, rgba(210, 3, 124, 0.8)), url(../img/hero_banner_live.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 1),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero_banner_live.jpg);
   background-size: cover;
   position: top;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  position: relative; }
-  .header__logo-box {
+  position: relative;
+
+  &__logo-box {
     max-width: 2rem;
     position: absolute;
     top: 2.5rem;
-    left: 2.5rem; }
-  .header__logo {
-    height: 10rem; }
+    left: 2.5rem;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+}
 
 /* .logo:hover {
   animation: moveInRight;
 } */
+
 /*Absolute in relation to the parent element header
 which is relative to the body.  
 The transform element is in relation to itself.
@@ -48,17 +69,20 @@ The transform element is in relation to itself.
   background: rgba(243, 204, 227, 0.4);
   padding: 3rem;
   text-align: center;
-  border: solid rgba(148, 11, 92, 0.35) 1px; }
+  border: solid rgba(148, 11, 92, 0.35) 1px;
+}
 
 /*
 Sometimes animations have weird sheky effect .
 This is the fix. 
 */
+
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+}
 
 .heading-primary--main {
   display: block;
@@ -68,7 +92,8 @@ This is the fix.
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+}
 
 .heading-primary--sub1 {
   display: block;
@@ -76,7 +101,8 @@ This is the fix.
   font-weight: 700;
   letter-spacing: 1.5rem;
   animation: moveInRight 1s ease-out;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+}
 
 .heading-primary--sub2 {
   display: block;
@@ -84,39 +110,54 @@ This is the fix.
   font-weight: 900;
   letter-spacing: 1.5rem;
   padding-top: 1remm;
-  animation: moveInRight 1s ease-out; }
+  animation: moveInRight 1s ease-out;
+}
 
 /*
 animation-delay: 3s;
 animation-iteration-count:3;
 */
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-10rem);
+  }
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(10rem);
+  }
   80% {
-    transform: translateX(-1rem); }
+    transform: translateX(-1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes moveInButton {
   0% {
     opacity: 0;
-    transform: translatey(3rem); }
+    transform: translatey(3rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 .btn:link,
 .btn:visited {
@@ -128,20 +169,24 @@ animation-iteration-count:3;
   transition: all 0.2s;
   position: relative;
   font-weight: 700;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+}
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}
 
 .btn--white {
   border: solid rgba(148, 11, 92, 0.35) 0.1rem;
-  background-color: #fff;
-  color: #777; }
+  background-color: $color-white;
+  color: $color-grey-dark;
+}
 
 .btn::after {
   content: '';
@@ -153,16 +198,20 @@ animation-iteration-count:3;
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+}
 
 .btn:hover::after {
   transform: scalex(1.4) scaleY(1.6);
-  opacity: 0; }
+  opacity: 0;
+}
 
 .btn--white::after {
-  background-color: #fff; }
+  background-color: $color-white;
+}
 
 /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/
 .btn--animated {
   animation: moveInButton 0.55s ease-out 0.75s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+}
