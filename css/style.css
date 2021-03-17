@@ -20,7 +20,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #f3cce3, rgba(210, 3, 124, 0.8)), url(../img/hero_banner_live.jpg);
+  background-image: linear-gradient(to right bottom, rgba(243, 204, 227, 0.1), rgba(210, 3, 124, 0.2)), url(../img/pexels-james-wheeler-1519088.jpg);
   background-size: cover;
   position: top;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -45,10 +45,15 @@ The transform element is in relation to itself.
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(243, 204, 227, 0.4);
+  background: rgba(18, 36, 66, 0.97);
   padding: 3rem;
   text-align: center;
-  border: solid rgba(148, 11, 92, 0.35) 1px; }
+  border: solid rgba(148, 11, 92, 0.85) 7px; }
+  .header__text-box-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 3rem; }
 
 /*
 Sometimes animations have weird sheky effect .
@@ -59,32 +64,38 @@ This is the fix.
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 3rem; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: 2.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-
-.heading-primary--sub1 {
-  display: block;
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 1.5rem;
-  animation: moveInRight 1s ease-out;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-
-.heading-primary--sub2 {
-  display: block;
-  font-size: 2rem;
-  font-weight: 900;
-  letter-spacing: 1.5rem;
-  padding-top: 1remm;
-  animation: moveInRight 1s ease-out; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+  .heading-primary--sub1 {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    animation: moveInRight 1s ease-out;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+  .heading-primary--sub2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1.5rem;
+    padding-top: 1remm;
+    animation: moveInRight 1s ease-out; }
 
 /*
 animation-delay: 3s;
@@ -118,51 +129,44 @@ animation-iteration-count:3;
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0.5rem 3rem;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: relative;
-  font-weight: 700;
-  font-size: 1.4rem; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn--white {
-  border: solid rgba(148, 11, 92, 0.35) 0.1rem;
-  background-color: #fff;
-  color: #777; }
-
-.btn::after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s; }
-
-.btn:hover::after {
-  transform: scalex(1.4) scaleY(1.6);
-  opacity: 0; }
-
-.btn--white::after {
-  background-color: #fff; }
-
-/* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/
-.btn--animated {
-  animation: moveInButton 0.55s ease-out 0.75s;
-  animation-fill-mode: backwards; }
+.btn {
+  /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.4rem; }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    border: solid rgba(148, 11, 92, 0.35) 0.1rem;
+    background-color: #fff;
+    color: #777; }
+    .btn--white::after {
+      background-color: #fff; }
+  .btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn--animated {
+    animation: moveInButton 0.55s ease-out 0.75s;
+    animation-fill-mode: backwards; }
