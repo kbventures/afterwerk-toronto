@@ -26,12 +26,12 @@ body {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   position: relative; }
   .header__logo-box {
-    max-width: 2rem;
     position: absolute;
-    top: 2.5rem;
-    left: 2.5rem; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .header__logo {
-    height: 10rem; }
+    height: 20rem; }
 
 /* .logo:hover {
   animation: moveInRight;
@@ -42,7 +42,7 @@ The transform element is in relation to itself.
 */
 .header__text-box {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(18, 36, 66, 0.97);
