@@ -45,13 +45,13 @@ body {
   &__logo-box {
     // max-width: 2rem;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 6rem;
+    left: 6rem;
+    // transform: translate(-50%, -50%);
   }
 
   &__logo {
-    height: 20rem;
+    height: 12.5rem;
   }
 }
 

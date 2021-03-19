@@ -26,11 +26,10 @@ body {
   position: relative; }
   .header__logo-box {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    top: 6rem;
+    left: 6rem; }
   .header__logo {
-    height: 20rem; }
+    height: 12.5rem; }
 
 /* .logo:hover {
   animation: moveInRight;
