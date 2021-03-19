@@ -1,9 +1,11 @@
-$color-primary-light: #f3cce3;
-$color-primary-dark: #d2037c;
+$color-primary-light: #03070d;
+$color-primary-dark: #500b39;
 
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+// background: rgba(80, 11, 57, 0.8);
 
 *,
 *::after,
@@ -32,19 +34,18 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.1),
-      rgba($color-primary-dark, 0.2)
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.45)
     ),
     url(../img/pexels-james-wheeler-1519088.jpg);
   background-size: cover;
-  position: top;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   position: relative;
 
   &__logo-box {
     // max-width: 2rem;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -64,13 +65,14 @@ The transform element is in relation to itself.
 */
 .header__text-box {
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(18, 36, 66, 0.97);
+  // background: rgba(197, 94, 149, 0.22);
+  background: rgba(3, 7, 13, 0.1);
   padding: 3rem;
   text-align: center;
-  border: solid rgba(148, 11, 92, 0.85) 7px;
+  // border: solid rgba(148, 11, 92, 0.85) 7px;
 
   &-primary {
     color: $color-white;
@@ -114,6 +116,7 @@ This is the fix.
   }
 
   &--sub1 {
+    background-color: rgba($color-primary-dark, 0.35);
     display: block;
     font-size: 1.75rem;
     font-weight: 700;

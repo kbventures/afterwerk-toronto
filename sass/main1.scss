@@ -1,68 +1,95 @@
+$color-primary-light: #f3cce3;
+$color-primary-dark: #d2037c;
+
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   background-color: #f1e8ed;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(3, 7, 13, 0.5), rgba(80, 11, 57, 0.45)), url(../img/pexels-james-wheeler-1519088.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.1),
+      rgba($color-primary-dark, 0.2)
+    ),
+    url(../img/pexels-james-wheeler-1519088.jpg);
   background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  position: relative; }
-  .header__logo-box {
+  position: relative;
+
+  &__logo-box {
+    // max-width: 2rem;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .header__logo {
-    height: 20rem; }
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+}
 
 /* .logo:hover {
   animation: moveInRight;
 } */
+
 /*Absolute in relation to the parent element header
 which is relative to the body.  
 The transform element is in relation to itself.
 */
 .header__text-box {
   position: absolute;
-  top: 75%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(3, 7, 13, 0.1);
+  background: rgba(18, 36, 66, 0.97);
   padding: 3rem;
-  text-align: center; }
-  .header__text-box-primary {
-    color: #fff;
+  text-align: center;
+  border: solid rgba(148, 11, 92, 0.85) 7px;
+
+  &-primary {
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+  }
+}
 
 /*
 Sometimes animations have weird sheky effect .
 This is the fix. 
 */
+
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 3rem; }
-  .heading-primary--main {
+  margin-bottom: 3rem;
+
+  &--main {
     display: block;
     font-size: 5rem;
     font-weight: 400;
@@ -70,8 +97,10 @@ This is the fix.
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-  .heading-primary--main {
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+  }
+
+  &--main {
     display: block;
     font-size: 5rem;
     font-weight: 400;
@@ -79,58 +108,77 @@ This is the fix.
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-  .heading-primary--sub1 {
-    background-color: rgba(80, 11, 57, 0.35);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+  }
+
+  &--sub1 {
     display: block;
     font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: 1.5rem;
     animation: moveInRight 1s ease-out;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-  .heading-primary--sub2 {
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+  }
+
+  &--sub2 {
     display: block;
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: 1.5rem;
     padding-top: 1remm;
-    animation: moveInRight 1s ease-out; }
+    animation: moveInRight 1s ease-out;
+  }
+}
 
 /*
 animation-delay: 3s;
 animation-iteration-count:3;
 */
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-10rem);
+  }
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(10rem);
+  }
   80% {
-    transform: translateX(-1rem); }
+    transform: translateX(-1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes moveInButton {
   0% {
     opacity: 0;
-    transform: translatey(3rem); }
+    transform: translatey(3rem);
+  }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 .btn {
-  /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/ }
-  .btn:link, .btn:visited {
+  &:link,
+  &:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.5rem 3rem;
@@ -139,17 +187,25 @@ animation-iteration-count:3;
     transition: all 0.2s;
     position: relative;
     font-weight: 700;
-    font-size: 1.4rem; }
-  .btn:active {
+    font-size: 1.4rem;
+  }
+
+  &:active {
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-  .btn--white {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
     border: solid rgba(148, 11, 92, 0.35) 0.1rem;
-    background-color: #fff;
-    color: #777; }
-    .btn--white::after {
-      background-color: #fff; }
-  .btn::after {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &::after {
     content: '';
     display: inline-block;
     height: 100%;
@@ -159,13 +215,21 @@ animation-iteration-count:3;
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all 0.4s; }
-  .btn:hover {
+    transition: all 0.4s;
+  }
+
+  &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2 rem rgba(0, 0, 0, 0.2); }
-    .btn:hover::after {
+    box-shadow: 0 1rem 2 rem rgba($color-black, 0.2);
+    &::after {
       transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
-  .btn--animated {
+      opacity: 0;
+    }
+  }
+
+  /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/
+  &--animated {
     animation: moveInButton 0.55s ease-out 0.75s;
-    animation-fill-mode: backwards; }
+    animation-fill-mode: backwards;
+  }
+}
