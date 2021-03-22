@@ -1,0 +1,44 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.45)
+    ),
+    url(../img/pexels-james-wheeler-1519088.jpg);
+  background-size: cover;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+
+  &__logo-box {
+    // max-width: 2rem;
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+  }
+
+  &__logo {
+    height: 12.5rem;
+  }
+}
+
+/*Absolute in relation to the parent element header
+  which is relative to the body.  
+  The transform element is in relation to itself.
+  */
+.header__text-box {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(3, 7, 13, 0.1);
+  padding: 3rem;
+  text-align: center;
+
+  &-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 3rem;
+  }
+}

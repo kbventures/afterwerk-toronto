@@ -1,3 +1,8 @@
+/*
+Although the name of this architecture is 7 to 1 we 
+we are only only using five since architecture
+and vendors are not used in this project.
+*/
 *,
 *::after,
 *::before {
@@ -9,53 +14,44 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translatey(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
-  background-color: #f1e8ed;
-  box-sizing: border-box; }
+  padding: 3rem; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(3, 7, 13, 0.5), rgba(80, 11, 57, 0.45)), url(../img/pexels-james-wheeler-1519088.jpg);
-  background-size: cover;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 6rem;
-    left: 6rem; }
-  .header__logo {
-    height: 12.5rem; }
-
-/* .logo:hover {
-  animation: moveInRight;
-} */
-/*Absolute in relation to the parent element header
-which is relative to the body.  
-The transform element is in relation to itself.
-*/
-.header__text-box {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(3, 7, 13, 0.1);
-  padding: 3rem;
-  text-align: center; }
-  .header__text-box-primary {
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 3rem; }
-
-/*
-Sometimes animations have weird sheky effect .
-This is the fix. 
-*/
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -94,38 +90,6 @@ This is the fix.
     letter-spacing: 1.5rem;
     padding-top: 1remm;
     animation: moveInRight 1s ease-out; }
-
-/*
-animation-delay: 3s;
-animation-iteration-count:3;
-*/
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes moveInButton {
-  0% {
-    opacity: 0;
-    transform: translatey(3rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
 
 .btn {
   /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/ }
@@ -168,3 +132,39 @@ animation-iteration-count:3;
   .btn--animated {
     animation: moveInButton 0.55s ease-out 0.75s;
     animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(3, 7, 13, 0.5), rgba(80, 11, 57, 0.45)), url(../img/pexels-james-wheeler-1519088.jpg);
+  background-size: cover;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 6rem;
+    left: 6rem; }
+  .header__logo {
+    height: 12.5rem; }
+
+/*Absolute in relation to the parent element header
+  which is relative to the body.  
+  The transform element is in relation to itself.
+  */
+.header__text-box {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(3, 7, 13, 0.1);
+  padding: 3rem;
+  text-align: center; }
+  .header__text-box-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 3rem; }
+
+/*
+animation-delay: 3s;
+animation-iteration-count:3;
+*/

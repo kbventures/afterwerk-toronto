@@ -1,0 +1,56 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 3rem;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+  }
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+  }
+
+  &--sub1 {
+    background-color: rgba($color-primary-dark, 0.35);
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    animation: moveInRight 1s ease-out;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
+  }
+
+  &--sub2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1.5rem;
+    padding-top: 1remm;
+    animation: moveInRight 1s ease-out;
+  }
+}
