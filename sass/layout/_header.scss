@@ -7,8 +7,11 @@
     ),
     url(../img/pexels-james-wheeler-1519088.jpg);
   background-size: cover;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);
   position: relative;
+  border-left: solid 0.2rem $color-border;
+  border-right: solid 0.2rem $color-border;
+  border-top: solid 0.2rem $color-border;
 
   &__logo-box {
     // max-width: 2rem;
@@ -34,6 +37,7 @@
   background: rgba(3, 7, 13, 0.1);
   padding: 3rem;
   text-align: center;
+ 
 
   &-primary {
     color: $color-white;

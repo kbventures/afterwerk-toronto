@@ -1,0 +1,9 @@
+.section-about{
+    background-image:linear-gradient(to right, $color-violet, $color-black-gloss); 
+    padding: 25rem 0;
+    margin-top: -12vh; 
+    border-bottom: solid 0.2rem $color-border;
+    border-left: solid 0.2rem $color-border;
+    border-right: solid 0.2rem $color-border;
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);    z-index: 200;
+}

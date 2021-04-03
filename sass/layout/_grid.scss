@@ -1,7 +1,7 @@
 // .row:last-child()
 .row {
     max-width: $grid-width;
-    background-color: #eee; 
+    // background-color: #eee; 
     margin: 0 auto; 
 
     &:not(:last-child){
@@ -13,7 +13,7 @@
     //braquet selector ^ starts * includes $ ends
 
     [class^="col-"]{
-        background-color: red;
+        // background-color: red;
         float: left; 
 
         &:not(:last-child){
