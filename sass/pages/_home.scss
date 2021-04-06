@@ -7,3 +7,23 @@
     border-right: solid 0.2rem $color-border;
     // clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);    z-index: 200;
 }
+
+.section-features{
+    margin-top: -8rem;
+    border-left: solid 0.2rem $color-border;
+    border-right: solid 0.2rem $color-border;
+    padding:20rem 0;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-dark-grey, 0.95),
+      rgba($color-blue, 0.95)
+    ),
+    url(../img/nat-4.jpg);
+    background-size: cover;
+
+    transform:skewY(-2deg);
+
+    & > * {
+        transform:skewY(2deg);
+    }
+}
