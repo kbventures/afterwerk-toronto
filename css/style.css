@@ -302,7 +302,8 @@ body {
   padding: 15rem 0;
   background-image: linear-gradient(to right, #940b5b, #10161f);
   border-left: solid 0.2rem #d02c83;
-  border-right: solid 0.2rem #d02c83; }
+  border-right: solid 0.2rem #d02c83;
+  margin-top: -4rem; }
 
 .header {
   height: 95vh;
