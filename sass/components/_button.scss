@@ -58,7 +58,7 @@
 
 .btn-text{
   &:link, &:visited{
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     color:$color-white;
     display: inline-block;
     text-decoration: none;
@@ -72,14 +72,17 @@
     background-color: $color-dark-violet;
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-white, 0.15);
-    transform: translateX(-2px);
+    transform: translateY(-2px);
     padding: 5px;
-
   }
 
   &:active{
     box-shadow: 0 0.5rem 1rem rgba($color-white, .15);
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
 }
+
+
+
+

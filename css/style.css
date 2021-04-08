@@ -183,12 +183,12 @@ body {
   background-color: #620740;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.15);
-  transform: translateX(-2px);
+  transform: translateY(-2px);
   padding: 5px; }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
-  transform: translateX(0); }
+  transform: translateY(0); }
 
 .composition {
   position: relative; }
@@ -253,7 +253,8 @@ body {
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .story__img {
     height: 100%;
     transform: scale(1);
