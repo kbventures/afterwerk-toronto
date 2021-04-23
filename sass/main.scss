@@ -18,13 +18,13 @@ and vendors are not used in this project.
 @import 'components/feature-box';
 @import 'components/story';
 
-@import 'pages/home';
-
-
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/navigation';
+@import "layout/footer";
 
+
+@import 'pages/home';
 
 
 /*
