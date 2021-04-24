@@ -507,8 +507,25 @@ body {
   background-image: linear-gradient(to right, #940b5b, #10161f);
   border-left: solid 0.2rem #d02c83;
   border-right: solid 0.2rem #d02c83;
-  border-bottom: solid 0.2rem #d02c83;
   margin-top: -4rem; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(41, 28, 56, 0.95), rgba(18, 36, 66, 0.95));
+  border-left: solid 0.2rem #d02c83;
+  border-right: solid 0.2rem #d02c83;
+  border-bottom: solid 0.2rem #d02c83; }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(148, 11, 91, 0.9) 50%), url(/img/nat-10.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.35);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 /*
 animation-delay: 3s;
