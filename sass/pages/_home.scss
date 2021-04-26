@@ -52,25 +52,32 @@
 .book{
     // background-image: linear-gradient(105deg,rgba($color-white, .9), rgba($color-violet,0.9)),url(/img/nat-10.jpg);
     background-image: linear-gradient(105deg,
-        rgba($color-white, .9) 0%,
-        rgba($color-violet, 0.9) 35%),
+        rgba($color-black-gloss, 1) 0%,
+        rgba($color-violet, 1) 100%),
         url(/img/nat-10.jpg);
     background-size:100%;
     background-repeat: no-repeat;
     border-radius: 3px;
     box-shadow: 0 1.5rem 1rem rgba($color-black, .35);
-    height: 50rem;
+    height: 60rem;
 
     &__form{
-        width: 50%;
+        width: 100%;
         padding: 6rem;
+        
+
     }
 
+
     &__logo{
-        display: inline-block;
-        width: 40%;
-        // padding: 6rem;
+        position: relative;
+        top: 21rem;
+        left: 8rem;
+        width: 30rem;
+        height: auto;
+       
     }
+
 }
 
 
