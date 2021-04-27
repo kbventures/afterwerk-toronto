@@ -16,7 +16,8 @@
         display: block;
         transition: all .3s;
 
-        &:focus{
+        &:focus,
+        &:active{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 4px solid $color-dark-pink-2; 
@@ -53,6 +54,10 @@
         display: inline-block;
     }
 
+    &__radio-input{
+        display: none;
+    }
+
     &__radio-label{
         font-size: $default-font-size;
         cursor: pointer;
@@ -79,9 +84,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            background-color: $color-black-gloss;
+            background-color: $color-dark-pink-2;
             opacity: 0;
         }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after{
+        opacity: 1;
     }
 
 }
