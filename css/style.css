@@ -386,6 +386,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #122442, #940b5b); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #122442, #940b5b); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #122442, #940b5b); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -395,13 +399,15 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #122442, #940b5b), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #122442, #940b5b), url(../img/nat-5.jpg); }
     .card__picture--3 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #122442, #940b5b), url(../img/nat-5.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -418,6 +424,10 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(27, 73, 136, 0.85), rgba(18, 36, 66, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(27, 73, 136, 0.85), rgba(18, 36, 66, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(27, 73, 136, 0.85), rgba(18, 36, 66, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -430,6 +440,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .navigation__checkbox {
   display: none; }
@@ -654,9 +681,7 @@ body {
     transform: skewY(2deg); }
 
 .section-tours {
-  background-image: linear-gradient(to right bottom, rgba(41, 28, 56, 0.95), rgba(18, 36, 66, 0.95));
-  padding: 25 0 50rem 0;
-  margin-top: -10rem; }
+  padding: 25 0 50rem 0; }
 
 .section-stories {
   padding: 15rem 0;
