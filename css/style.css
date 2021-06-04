@@ -3,6 +3,20 @@ Although the name of this architecture is 7 to 1 we
 we are only only using five since architecture
 and vendors are not used in this project.
 */
+/*
+0-600px;        PHONE
+600 - 900px;    Tablet portrait
+900 - 1200px;   Tablet landscape
+[1200-1800] is where normal styles apply
+1800px + :      Big Desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -12,6 +26,15 @@ and vendors are not used in this project.
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -475,7 +498,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    background-color: #1b4988;
+    background-color: rgba(27, 73, 136, 0.85);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
@@ -543,7 +566,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    background-color: #1b4988;
+    background-color: rgba(27, 73, 136, 0.85);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
