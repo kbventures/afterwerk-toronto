@@ -611,7 +611,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    background-color: #1b4988;
+    background-color: rgba(27, 73, 136, 0.85);
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
