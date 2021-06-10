@@ -16,6 +16,9 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER: BASE + Typography > General Layout + Grid > Page Layout > Components
+
 */
 *,
 *::after,
@@ -38,7 +41,11 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #10161f; }
+  background-color: #10161f;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -73,8 +80,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #fff;
-  padding: 3rem; }
+  color: #fff; }
 
 .heading-primary {
   color: #fff;
@@ -90,15 +96,10 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-  .heading-primary--main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 2.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-family: 4rem; } }
   .heading-primary--sub1 {
     background-color: rgba(80, 11, 57, 0.35);
     display: block;
@@ -107,6 +108,9 @@ body {
     letter-spacing: 1.5rem;
     animation: moveInRight 1s ease-out;
     text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub1 {
+        letter-spacing: .5rem; } }
   .heading-primary--sub2 {
     display: block;
     font-size: 2rem;
@@ -114,6 +118,9 @@ body {
     letter-spacing: 1.5rem;
     padding-top: 1remm;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub2 {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
