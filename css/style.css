@@ -865,8 +865,10 @@ body {
     background-color: #291c38;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.2); }
-  .footer__copyright {
-    text-align: center; }
+  @media (max-width: 56.25em) {
+    .footer__copyright {
+      width: 100%;
+      text-align: center; } }
 
 .row {
   max-width: 114rem;
@@ -882,7 +884,8 @@ body {
     clear: both; }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row [class^='col-'] {
     float: left; }
     .row [class^='col-']:not(:last-child) {

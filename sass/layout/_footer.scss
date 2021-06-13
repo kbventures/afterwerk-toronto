@@ -65,6 +65,11 @@
   }
 
   &__copyright {
-    text-align: center;
+    // text-align: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
