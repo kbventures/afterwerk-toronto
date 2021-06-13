@@ -1,99 +1,103 @@
-.section-about{
-    background-image:linear-gradient(to right, $color-violet, $color-black-gloss); 
-    padding: 25rem 0;
-    
-    margin-top: -12vh; 
-    border-bottom: solid 0.2rem $color-border;
-    border-left: solid 0.2rem $color-border;
-    border-right: solid 0.2rem $color-border;
-    // clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);    z-index: 200;
+.section-about {
+  background-image: linear-gradient(
+    to right,
+    $color-violet,
+    $color-black-gloss
+  );
+  padding: 25rem 0;
+
+  margin-top: -12vh;
+  border-bottom: solid 0.2rem $color-border;
+  border-left: solid 0.2rem $color-border;
+  border-right: solid 0.2rem $color-border;
+  // clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);    z-index: 200;
 }
 
-.section-features{
-    margin-top: -8rem;
-    border-left: solid 0.2rem $color-border;
-    border-right: solid 0.2rem $color-border;
-    padding:20rem 0;
-    background-image: linear-gradient(
+.section-features {
+  margin-top: -8rem;
+  border-left: solid 0.2rem $color-border;
+  border-right: solid 0.2rem $color-border;
+  padding: 20rem 0;
+  background-image: linear-gradient(
       to right bottom,
       rgba($color-dark-grey, 0.95),
       rgba($color-blue, 0.95)
     ),
     url(../img/nat-4.jpg);
-    background-size: cover;
+  background-size: cover;
 
-    transform:skewY(-2deg);
+  transform: skewY(-2deg);
 
-    & > * {
-        transform:skewY(2deg);
-    }
+  & > * {
+    transform: skewY(2deg);
+  }
 }
-
 
 // Section Tours
 
-.section-tours{
-    // background-image: linear-gradient(to right bottom, rgba($color-dark-grey, 0.95), rgba($color-dark-blue, 0.95));
+.section-tours {
+  // background-image: linear-gradient(to right bottom, rgba($color-dark-grey, 0.95), rgba($color-dark-blue, 0.95));
 
-   padding: 25 0 50rem 0;
-//    margin-top:-10rem;
-
+  padding: 25 0 50rem 0;
+  //    margin-top:-10rem;
 }
 
 // Section Stories
 
-.section-stories{
-    padding: 15rem 0;
-    background-image:linear-gradient(to right, $color-violet, $color-black-gloss); 
-    border-left: solid 0.2rem $color-border;
-    border-right: solid 0.2rem $color-border;
-    margin-top: -4rem;
+.section-stories {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right,
+    $color-violet,
+    $color-black-gloss
+  );
+  border-left: solid 0.2rem $color-border;
+  border-right: solid 0.2rem $color-border;
+  margin-top: -4rem;
 }
 
-.section-book{
-    padding: 15rem 0;
-    background-image: linear-gradient(to right bottom, rgba($color-dark-grey, 0.95), rgba($color-dark-blue, 0.95));
-    border-left: solid 0.2rem $color-border;
-    border-right: solid 0.2rem $color-border;
-    border-bottom: solid 0.2rem $color-border;
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-dark-grey, 0.95),
+    rgba($color-dark-blue, 0.95)
+  );
+  border-left: solid 0.2rem $color-border;
+  border-right: solid 0.2rem $color-border;
+  border-bottom: solid 0.2rem $color-border;
 }
 
-.book{
-    // background-image: linear-gradient(105deg,rgba($color-white, .9), rgba($color-violet,0.9)),url(/img/nat-10.jpg);
-    background-image: linear-gradient(105deg,
-        rgba($color-black-gloss, 1) 0%,
-        rgba($color-violet, 1) 100%),
-        url(/img/nat-10.jpg);
-    background-size:100%;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 1rem rgba($color-black, .35);
-    height: 60rem;
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-black-gloss, 1) 0%,
+      rgba($color-violet, 1) 100%
+    ),
+    url(/img/nat-10.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 1rem rgba($color-black, 0.35);
+  height: 60rem;
 
-    &__form{
-        width: 100%;
-        padding: 6rem;
-        
+  @include respond(tab-port) {
+  }
 
+  &__form {
+    width: 100%;
+    padding: 6rem;
+  }
+
+  &__logo {
+    position: relative;
+    top: 21rem;
+    right: 4rem;
+    width: 30rem;
+    height: auto;
+
+    @include respond(tab-port) {
+      display: none;
     }
-
-
-    &__logo{
-        position: relative;
-        top: 21rem;
-        right: 4rem;
-        width: 30rem;
-        height: auto;
-       
-    }
-
+  }
 }
-
-
-
-
-
-
-
-
-

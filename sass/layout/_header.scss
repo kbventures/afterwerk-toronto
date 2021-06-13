@@ -7,8 +7,9 @@
     ),
     url(../img/pexels-james-wheeler-1519088.jpg);
   background-size: cover;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);
   border-left: solid 0.2rem $color-border;
   border-right: solid 0.2rem $color-border;
   border-top: solid 0.2rem $color-border;
@@ -18,6 +19,15 @@
     position: absolute;
     top: 6rem;
     left: 6rem;
+
+    @include respond(phone) {
+      // top: 50%;
+      // right: 50%;
+      // transform: translate(-50%, -50%);
+      position: static;
+      text-align: center;
+      margin-top: 10rem;
+    }
   }
 
   &__logo {
@@ -37,7 +47,6 @@
   background: rgba(3, 7, 13, 0.1);
   padding: 3rem;
   text-align: center;
- 
 
   &-primary {
     color: $color-white;

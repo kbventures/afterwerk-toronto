@@ -23,7 +23,7 @@ body {
     animation-timing-function: ease-in-out;
     text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
 
-    @include respond(phone){
+    @include respond(phone) {
       letter-spacing: 1rem;
       font-family: 4rem;
     }
@@ -38,8 +38,8 @@ body {
     animation: moveInRight 1s ease-out;
     text-shadow: 0.1rem 0.1rem 0.1rem rgba($color-black, 0.2);
 
-    @include respond(phone){
-      letter-spacing: .5rem;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
     }
   }
 
@@ -51,43 +51,47 @@ body {
     padding-top: 1remm;
     animation: moveInRight 1s ease-out;
 
-    @include respond(phone){
-      letter-spacing: .5rem;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
     }
   }
 }
 
-.heading-secondary{
+.heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight:700; 
+  font-weight: 700;
   display: inline-block;
-  background-image:linear-gradient(to right,$color-white, $color-dark-pink-2);
+  background-image: linear-gradient(to right, $color-white, $color-dark-pink-2);
   -webkit-background-clip: text;
-  color:transparent; 
+  color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 
-  &:hover{
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($color-black,0.2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
-.heading-tertiary{
-  font-weight: 700;;
+.heading-tertiary {
+  font-weight: 700;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 
-.paragraph{
+.paragraph {
   font-size: 1.6rem;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
 }
-
-
-
-
