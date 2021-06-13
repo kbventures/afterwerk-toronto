@@ -11,6 +11,10 @@
   border-left: solid 0.2rem $color-border;
   border-right: solid 0.2rem $color-border;
   // clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);    z-index: 200;
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -31,6 +35,10 @@
   & > * {
     transform: skewY(2deg);
   }
+
+  @include respond(tab-port) {
+    padding: 15rem 0;
+  }
 }
 
 // Section Tours
@@ -40,6 +48,10 @@
 
   padding: 25 0 50rem 0;
   //    margin-top:-10rem;
+
+  //   @include respond(tab-port) {
+  //     padding: 20rem 0 50rem 0;
+  //   }
 }
 
 // Section Stories
@@ -54,6 +66,9 @@
   border-left: solid 0.2rem $color-border;
   border-right: solid 0.2rem $color-border;
   margin-top: -4rem;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-book {
@@ -66,6 +81,9 @@
   border-left: solid 0.2rem $color-border;
   border-right: solid 0.2rem $color-border;
   border-bottom: solid 0.2rem $color-border;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
@@ -80,9 +98,6 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 1rem rgba($color-black, 0.35);
   height: 60rem;
-
-  @include respond(tab-port) {
-  }
 
   &__form {
     width: 100%;

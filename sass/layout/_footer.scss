@@ -10,11 +10,12 @@
   &__logo-box {
     text-align: center;
     margin-bottom: 7rem;
-    margin-top: 3rem;
+
     display: none;
 
     @include respond(tab-port) {
       display: block;
+      margin-bottom: 4rem;
     }
   }
 
