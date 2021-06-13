@@ -295,7 +295,10 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
-  transition: transform .3s; }
+  transition: transform 0.3s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     background-image: linear-gradient(to right, #fff, #1b4988);
@@ -999,7 +1002,7 @@ body {
     transform: skewY(2deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-tours {
   padding: 25 0 50rem 0; }
