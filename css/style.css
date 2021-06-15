@@ -676,7 +676,7 @@ body {
       .popupAbout__left {
         width: 80%;
         display: block;
-        margin: 0 auto; } }
+        margin: 2rem auto; } }
     @media (max-width: 37.5em) {
       .popupAbout__left {
         width: 60%; } }
@@ -752,17 +752,32 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s; }
+    @media (max-width: 37.5em) {
+      .popupStories__content {
+        width: 100%; } }
   .popupStories__left {
     width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popupStories__left {
+        display: block;
+        width: 45%;
+        margin: 2rem auto; } }
   .popupStories__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popupStories__right {
+        display: block;
+        width: 100%; } }
   .popupStories__img {
     display: block;
     width: 100%; }
+    @media (max-width: 37.5em) {
+      .popupStories__img {
+        display: none; } }
   .popupStories__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
