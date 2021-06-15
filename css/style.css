@@ -321,7 +321,10 @@ body {
   border-bottom: 4px solid transparent;
   width: 100%;
   display: block;
-  transition: all .3s; }
+  transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus, .form__input:active {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -336,9 +339,9 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   margin-left: 2rem;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   display: block;
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -348,6 +351,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 1rem; } }
 
 .form__radio-input {
   display: none; }
@@ -366,9 +373,9 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: -.4rem; }
+  top: -0.4rem; }
   .form__radio-button::after {
-    content: "";
+    content: '';
     height: 1rem;
     width: 1.3rem;
     border-radius: 50%;
@@ -1063,9 +1070,7 @@ body {
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(41, 28, 56, 0.95), rgba(18, 36, 66, 0.95));
-  border-left: solid 0.2rem #d02c83;
-  border-right: solid 0.2rem #d02c83;
-  border-bottom: solid 0.2rem #d02c83; }
+  border: solid 0.2rem #d02c83; }
   @media (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }

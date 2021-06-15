@@ -78,9 +78,8 @@
     rgba($color-dark-grey, 0.95),
     rgba($color-dark-blue, 0.95)
   );
-  border-left: solid 0.2rem $color-border;
-  border-right: solid 0.2rem $color-border;
-  border-bottom: solid 0.2rem $color-border;
+  border: solid 0.2rem $color-border;
+
   @include respond(tab-port) {
     padding: 10rem 0;
   }
