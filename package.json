@@ -1,11 +1,15 @@
-
 {
   "name": "afterwerk-toronto",
   "version": "1.0.0",
   "description": "",
+  "browserslist":"last 10 versions",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/basic-icon-font.css css/style.comp.css",
+    "prefix:css": "postcss css/style.concat.css --use autoprefixer -o css/style.prefix.css",
+    "compress:scss":"node-sass css/style.prefix.css css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,10 @@
   "homepage": "https://github.com/kbventures/afterwerk-toronto#readme",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "autoprefixer": "^10.2.6",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.3.4",
+    "postcss-cli": "^8.3.1"
   }
 }
