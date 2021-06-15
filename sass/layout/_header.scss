@@ -1,5 +1,5 @@
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.5),
@@ -8,11 +8,15 @@
     url(../img/pexels-james-wheeler-1519088.jpg);
   background-size: cover;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);
   border-left: solid 0.2rem $color-border;
   border-right: solid 0.2rem $color-border;
   border-top: solid 0.2rem $color-border;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 88vh, 0% 100%);
+    height: 95vh;
+  }
 
   &__logo-box {
     // max-width: 2rem;
