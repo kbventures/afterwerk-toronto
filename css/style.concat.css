@@ -1275,7 +1275,7 @@ body {
   display: none; }
 
 .navigation__button {
-  background-color: #fff;
+  background-image: linear-gradient(to right, #940b5b, #10161f);
   height: 7rem;
   width: 7rem;
   position: fixed;
