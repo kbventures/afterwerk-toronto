@@ -19,36 +19,46 @@
       type="image/png"
       href="img/favicon/apple-icon-180x180.png"
     />
-    <script src="https://kit.fontawesome.com/be2ebd0849.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/be2ebd0849.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Afterwerk | Exciting Parties All The Time</title>
-
   </head>
   <body>
-
     <!-- Hamburger Menu -->
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-     
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
-     
+
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Testimony</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
+        <ul class="navigation__list" id="navigation">
+          <li class="navigation__item">
+            <a href="#home" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#features" class="navigation__link">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-stories" class="navigation__link">Testimony</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#bookings" class="navigation__link">Contact Us</a>
+          </li>
         </ul>
-
       </nav>
     </div>
 
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__logo-box">
         <img
           src="img/AfterWerk Logo - Colours RGB.webp"
@@ -62,33 +72,32 @@
           <span class="heading-primary--sub1">Getting People Moving</span>
           <span class="heading-primary--sub1">Getting People Together</span>
         </h1>
-        <a href="#section-about" class="btn btn--white btn--animated">Find out More!</a>
+        <a href="#section-about" class="btn btn--white btn--animated"
+          >Find out More!</a
+        >
       </div>
     </header>
 
     <main>
-
       <!-- About Section -->
       <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            After Werk 
-          </h2>
-      </div>
+          <h2 class="heading-secondary">After Werk</h2>
+        </div>
 
-      <div class="row">
-        <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">
-               About US
-            </h3>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">About US</h3>
             <p class="paragraph">
-              After Werk is a lifestyle brand dedicated to being your best outside work. We enable connecting with others through fun events, practissing
-              self-care with help from products in our online store.
+              After Werk is a lifestyle brand dedicated to being your best
+              outside work. We enable connecting with others through fun events,
+              practissing self-care with help from products in our online store.
             </p>
-            <a href="#popupAbout" class="btn-text u-margin-bottom-medium">Learn more&rarr;</a>
-        
-            
-<!-- 
+            <a href="#popupAbout" class="btn-text u-margin-bottom-medium"
+              >Learn more&rarr;</a
+            >
+
+            <!-- 
             <h3 class="heading-tertiary u-margin-bottom-small">
             About Us
             </h3>
@@ -106,37 +115,53 @@
               life  more fun.
             </p>
             <a href="#" class="btn-text">Learn more &rarr;</a> -->
-      </div>
+          </div>
 
-      <!-- BEM Block Element Modifier  .composition>img.composition__photo.composition__photo--p1-->
-      <!-- BEM Block Element Modifier  .composition>(img.composition__photo.composition__photo--p1)*3-->
-  
-      <div class="col-1-of-2">
-        <div class="composition">
-          <!-- 
+          <!-- BEM Block Element Modifier  .composition>img.composition__photo.composition__photo--p1-->
+          <!-- BEM Block Element Modifier  .composition>(img.composition__photo.composition__photo--p1)*3-->
+
+          <div class="col-1-of-2">
+            <div class="composition">
+              <!-- 
             <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
           <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
           <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
            -->
-           <img src="img/temporaryFolder/IMG_1444.JPG" alt="Photo 1" class="composition__photo composition__photo--p1">
-          <img src="img/temporaryFolder/IMG_1522.JPG" alt="Photo 2" class="composition__photo composition__photo--p2">
-          <img src="img/temporaryFolder/IMG_1510.JPG" alt="Photo 3" class="composition__photo composition__photo--p3">
+              <img
+                src="img/temporaryFolder/IMG_1444.JPG"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="img/temporaryFolder/IMG_1522.JPG"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/temporaryFolder/IMG_1510.JPG"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
       </section>
 
       <!-- Feactures -->
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="row">
-
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-world"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Live a better lifestyle</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Live a better lifestyle
+              </h3>
               <p class="feature-box__text">
-                We care about your well being and "being healthy" encompasses many factors. We Promote an all-encompassing approach to living a
-                healthy lifestyle including looking after our mental health, moving, being connected with others and most importantly; having fun!
+                We care about your well being and "being healthy" encompasses
+                many factors. We Promote an all-encompassing approach to living
+                a healthy lifestyle including looking after our mental health,
+                moving, being connected with others and most importantly; having
+                fun!
               </p>
             </div>
           </div>
@@ -144,10 +169,13 @@
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-link"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Connect with good people</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Connect with good people
+              </h3>
               <p class="feature-box__text">
-                After Werk throws fun memorable events filled with amazing LGBTQ+ folks and allies where you can meet great friends, network, dance and
-                maybe win prizes!
+                After Werk throws fun memorable events filled with amazing
+                LGBTQ+ folks and allies where you can meet great friends,
+                network, dance and maybe win prizes!
               </p>
             </div>
           </div>
@@ -155,10 +183,13 @@
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-share"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Sharing is caring</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Sharing is caring
+              </h3>
               <p class="feature-box__text">
-                We love social media! Our social media platform share fun events as well as articles online to make you think and reflect - some to make 
-                you laugh.
+                We love social media! Our social media platform share fun events
+                as well as articles online to make you think and reflect - some
+                to make you laugh.
               </p>
             </div>
           </div>
@@ -168,7 +199,9 @@
               <i class="feature-box__icon icon-basic-heart"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Give Back</h3>
               <p class="feature-box__text">
-                Giving back is an essential part of a strong thriving community, our mandate is to donate 5% of our profits to worthy LGBTQ+ charities.
+                Giving back is an essential part of a strong thriving community,
+                our mandate is to donate 5% of our profits to worthy LGBTQ+
+                charities.
               </p>
             </div>
           </div>
@@ -178,52 +211,54 @@
       <!-- Stories -->
       <section class="section-stories" id="section-stories">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            A word from our founder
-          </h2>
+          <h2 class="heading-secondary">A word from our founder</h2>
         </div>
-     
 
-      <div class="row">
-        <div class="story">
-          <figure class="story__shape">
-            <img src="/img/1516590849889.jpeg" alt="Founder Picture" class="story__img">
-            <figcaption class="story__caption">Jean-Gilles Paris&eacute;</figcaption>
-          </figure>
-          <div class="story__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Jean-Gilles Paris&eacute;
-            </h3>
-            <p>
-              The << After Werk >> lifestyle is one where you are comfortable in your own skin where you reach out to others to give and get support,
-              you thrive and most importantly you have fun! I've always truely enjoyed connecting folks and helping them achieve their goals.
-            </p>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="/img/1516590849889.jpeg"
+                alt="Founder Picture"
+                class="story__img"
+              />
+              <figcaption class="story__caption">
+                Jean-Gilles Paris&eacute;
+              </figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Jean-Gilles Paris&eacute;
+              </h3>
+              <p>
+                The << After Werk >> lifestyle is one where you are comfortable
+                in your own skin where you reach out to others to give and get
+                support, you thrive and most importantly you have fun! I've
+                always truely enjoyed connecting folks and helping them achieve
+                their goals.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="u-center-text u-margin-top-huge">
-        <a href="#popupStories" class="btn-text">A word from our founder... &rarr;</a>
-      </div>
-    </section>
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#popupStories" class="btn-text"
+            >A word from our founder... &rarr;</a
+          >
+        </div>
+      </section>
 
+      <!-- Our Projects -->
+      <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-margin-bottom-big u-margin-top-big">
+          <h2 class="heading-secondary">Our Projects</h2>
+        </div>
 
-    <!-- Our Projects -->
-    <section class="section-tours" id="section-tours">
-      <div class="u-center-text u-margin-bottom-big u-margin-top-big">
-          <h2 class="heading-secondary">
-            Our Projects
-          </h2>
-      </div>
-
-      <div class="row">
-
-        <div class="col-1-of-3">
-          <div class="card">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
               <div class="card__side card__side--front">
-                <div class="card__picture card__picture--1">
-                  &nbsp;
-                </div>
+                <div class="card__picture card__picture--1">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--1">
                     Afterwerk Health
@@ -231,277 +266,340 @@
                 </h4>
                 <div class="card__details">
                   <ul>
-                    <li>asdf asdf </li>
+                    <li>asdf asdf</li>
                     <li>asdf sadf</li>
                     <li>as asdf sdfg</li>
                     <li>asdf kjf jjjfa ff</li>
                     <li>asdf</li>
                   </ul>
                 </div>
-
-            </div>
-            <div class="card__side card__side--back card__side--back-1">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$134</p>
-                </div>
-                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">
-                  Afterwerk Health
-                </span>
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>asdf asdf </li>
-                  <li>asdf sadf</li>
-                  <li>as asdf sdfg</li>
-                  <li>asdf kjf jjjfa ff</li>
-                  <li>asdf</li>
-                </ul>
-              </div>
-
-          </div>
-          <div class="card__side card__side--back card__side--back-2">
-            <div class="card__cta">
-              <div class="card__price-box">
-                <p class="card__price-only">Only</p>
-                <p class="card__price-value">$134</p>
-              </div>
-              <a href="#popup" class="btn btn--white">Book now!</a>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--3">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--3">
-                  Afterwerk Health
-                </span>
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>asdf asdf </li>
-                  <li>asdf sadf</li>
-                  <li>as asdf sdfg</li>
-                  <li>asdf kjf jjjfa ff</li>
-                  <li>asdf</li>
-                </ul>
-              </div>
-
-          </div>
-          <div class="card__side card__side--back card__side--back-3">
-            <div class="card__cta">
-              <div class="card__price-box">
-                <p class="card__price-only">Only</p>
-                <p class="card__price-value">$134</p>
-              </div>
-              <a href="#popup" class="btn btn--white">Book now!</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="u-center-text u-margin-top-huge u-margin-bottom-big">
-        <!-- <a href="#" class="btn btn--white">alsjdflka</a> -->
-      </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section class="section-book">
-      <div class="row">
-        <div class="book">
-
-          <div class="col-2-of-3">
-            <div class="book__form">
-              <form action="#" class="form">
-                <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">
-                    Contact Us
-                  </h2>
-                </div>
-                <div class="form__group">
-                  <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                  <label for="name" class="form__label">Full Name</label>
-                </div>
-                <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email" id="email" required>
-                  <label for="email" class="form__label">Email</label>
-                </div>
-                <div class="form__group">
-                  <input type="tel" class="form__input" placeholder="###-###-####" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" required>
-                  <label for="phone" class="form__label">Telehone</label>
-                </div>
-  
-                <div class="form__group u-margin-bottom-medium">
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="am" name="contactwhen">
-                    <label for="am" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Call Back AM
-                    </label>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$134</p>
                   </div>
-  
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="pm" name="contactwhen">
-                    <label for="pm" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Call Back PM
-                    </label>
-                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
-  
-                
-              <div class="form__group">
-                <button class="btn btn--green">
-                  Next Step &rarr;
-                </button>
               </div>
-  
-              </form>
             </div>
           </div>
 
-          
-        <div class="col-1-of-3">
-            <div class="book__logo-box">
-              <img src="img/AfterWerk Logo - Colours RGB.webp" alt="" class="book__logo">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Afterwerk Health
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>asdf asdf</li>
+                    <li>asdf sadf</li>
+                    <li>as asdf sdfg</li>
+                    <li>asdf kjf jjjfa ff</li>
+                    <li>asdf</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$134</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
-        
-          
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Afterwerk Health
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>asdf asdf</li>
+                    <li>asdf sadf</li>
+                    <li>as asdf sdfg</li>
+                    <li>asdf kjf jjjfa ff</li>
+                    <li>asdf</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$134</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="u-center-text u-margin-top-huge u-margin-bottom-big">
+          <!-- <a href="#" class="btn btn--white">alsjdflka</a> -->
+        </div>
+      </section>
 
+      <!-- Booking Section -->
+      <section class="section-book" id="bookings">
+        <div class="row">
+          <div class="book">
+            <div class="col-2-of-3">
+              <div class="book__form">
+                <form action="#" class="form">
+                  <div class="u-margin-bottom-medium">
+                    <h2 class="heading-secondary">Contact Us</h2>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Full Name"
+                      id="name"
+                      required
+                    />
+                    <label for="name" class="form__label">Full Name</label>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="email"
+                      class="form__input"
+                      placeholder="Email"
+                      id="email"
+                      required
+                    />
+                    <label for="email" class="form__label">Email</label>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="tel"
+                      class="form__input"
+                      placeholder="###-###-####"
+                      id="phone"
+                      pattern="^\d{3}-\d{3}-\d{4}$"
+                      required
+                    />
+                    <label for="phone" class="form__label">Telehone</label>
+                  </div>
+
+                  <div class="form__group u-margin-bottom-medium">
+                    <div class="form__radio-group">
+                      <input
+                        type="radio"
+                        class="form__radio-input"
+                        id="am"
+                        name="contactwhen"
+                      />
+                      <label for="am" class="form__radio-label">
+                        <span class="form__radio-button"></span>
+                        Call Back AM
+                      </label>
+                    </div>
+
+                    <div class="form__radio-group">
+                      <input
+                        type="radio"
+                        class="form__radio-input"
+                        id="pm"
+                        name="contactwhen"
+                      />
+                      <label for="pm" class="form__radio-label">
+                        <span class="form__radio-button"></span>
+                        Call Back PM
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form__group">
+                    <button class="btn btn--green">Next Step &rarr;</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="book__logo-box">
+                <img
+                  src="img/AfterWerk Logo - Colours RGB.webp"
+                  alt=""
+                  class="book__logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-
       <div class="footer__logo-box">
-        <img src="img/AfterWerk Logo - Colours RGB.webp" alt="" class="footer__logo">
+        <img
+          src="img/AfterWerk Logo - Colours RGB.webp"
+          alt=""
+          class="footer__logo"
+        />
       </div>
 
       <div class="row">
-
-          <div class="col-1-of-2">
-            <div class="footer__navigation">
-              <ul class="footer__list">
-                <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-              </ul>
-            </div>
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Career</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
           </div>
+        </div>
 
-        
-          <div class="col-1-of-2">
-            <p class="footer__copyright">
-              Original Design by Jonas SchemdtMann. Modified by Ken Beaudin for After Werk Toronto. 
-            </p>
-          </div>
-
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Original Design by Jonas SchemdtMann. Modified by Ken Beaudin for
+            After Werk Toronto.
+          </p>
+        </div>
       </div>
     </footer>
 
-        <!-- Popup About US -->
-        <div class="popupAbout" id="popupAbout">
-          <div class="popupAbout__content">
-            <div class="popupAbout__left">
-              <img src="img/temporaryFolder/52.5 lb Adjustable Dumbbell Disassembled.jpg" alt="Tour Photo" class="popupAbout__img">
-              <!-- <img src="img/nat-9.jpg" alt="Tour Photo" class="popupAbout__img"> -->
-            </div>
-            <div class="popupAbout__right">
-              <a href="#section-about" class="popupAbout__close">&times;</a>
-              <h2 class="heading-secondary u-margin-bottom-small">After Werk</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">A brief history...</h3>
-                <p class="popupAbout__text">
-                  After Werk is a lifetstyle brand dedicated to being your best outside work. We enable connecting
-                  with others through fun events, practicing self-care with help from products in our online store.
-                  We proudly founded by LGBTQ+ folks for LGBTQ+ folks allies.  After Werk started out as packed parties featuring
-                  incredible artists like "Canada Drag Race" superstars Priyanka Love(winner) and Boa the Drag Queen, as well as DJ
-                  Sofia Fly spinning house, throwbacks and Latin beats.  We have evolved into a lifestyle brand and online shop which
-                  currently offers fitness and wellness products. 
-                </p>
-            </div>
-          </div>
+    <!-- Popup About US -->
+    <div class="popupAbout" id="popupAbout">
+      <div class="popupAbout__content">
+        <div class="popupAbout__left">
+          <img
+            src="img/temporaryFolder/52.5 lb Adjustable Dumbbell Disassembled.jpg"
+            alt="Tour Photo"
+            class="popupAbout__img"
+          />
+          <!-- <img src="img/nat-9.jpg" alt="Tour Photo" class="popupAbout__img"> -->
         </div>
-
-
-            <!-- Popup Story Section -->
-    <div class="popupStories" id="popupStories">
-      <div class="popupStories__content">
-        <div class="popupStories__left">
-          <img src="img/temporaryFolder/IMG_7192.JPG" alt="Tour Photo" class="popupStories__img">
-          <img src="img/temporaryFolder/IMG_7151.JPG" alt="Tour Photo" class="popupStories__img">
-        </div>
-        <div class="popupStories__right">
-          <a href="#section-stories" class="popupStories__close">&times;</a>
+        <div class="popupAbout__right">
+          <a href="#section-about" class="popupAbout__close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-small">After Werk</h2>
-            <h3 class="heading-tertiary u-margin-bottom-small">A brief history...</h3>
-            <p class="popupStories__text">
-              "The After Werk lifestyle is one where you are comfortable in your own skin, where you reach out to others to give and get support, you
-              thrive for more and most importantly you have fun! I've always truely enjoyed connecting folks and helping them achieve their goals.
-              
-              Being chained to a desk for decades affected my mental and physical health; I was always tired, overweight, battling depression and it popup__left
-              me ffeeling like I was not having a meaningful impact on the world. I decided it was time to start a new chapter and it was time to tackle all my demons
-              . After seeking professional support and putting in great work, I decided to evovle the After Werk Brand, and help others by sharing tools and wisdom I 
-              had learnt. I was dertmined to follow my dreams and build something that promotes community, self love and self growth. Having grown up in a different parts of Canada,
-              I've mixed in maritime charm, B.C. buzz and Montreal fun to the organization.  The After Werk Community is one where people lift themselves up and help each other
-              set and achieve goals. After Werk was founded on the idea that connecting and engaging will help build a strong sense of community where folks will feel more comfortable expressing
-              themselves, seeking support and grow as a result." <br><br>-Jean-Gilles Paris&eacute;
-            </p>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            A brief history...
+          </h3>
+          <p class="popupAbout__text">
+            After Werk is a lifetstyle brand dedicated to being your best
+            outside work. We enable connecting with others through fun events,
+            practicing self-care with help from products in our online store. We
+            proudly founded by LGBTQ+ folks for LGBTQ+ folks allies. After Werk
+            started out as packed parties featuring incredible artists like
+            "Canada Drag Race" superstars Priyanka Love(winner) and Boa the Drag
+            Queen, as well as DJ Sofia Fly spinning house, throwbacks and Latin
+            beats. We have evolved into a lifestyle brand and online shop which
+            currently offers fitness and wellness products.
+          </p>
         </div>
       </div>
     </div>
 
-
-
+    <!-- Popup Story Section -->
+    <div class="popupStories" id="popupStories">
+      <div class="popupStories__content">
+        <div class="popupStories__left">
+          <img
+            src="img/temporaryFolder/IMG_7192.JPG"
+            alt="Tour Photo"
+            class="popupStories__img"
+          />
+          <img
+            src="img/temporaryFolder/IMG_7151.JPG"
+            alt="Tour Photo"
+            class="popupStories__img"
+          />
+        </div>
+        <div class="popupStories__right">
+          <a href="#section-stories" class="popupStories__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">After Werk</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            A brief history...
+          </h3>
+          <p class="popupStories__text">
+            "The After Werk lifestyle is one where you are comfortable in your
+            own skin, where you reach out to others to give and get support, you
+            thrive for more and most importantly you have fun! I've always
+            truely enjoyed connecting folks and helping them achieve their
+            goals. Being chained to a desk for decades affected my mental and
+            physical health; I was always tired, overweight, battling depression
+            and it popup__left me ffeeling like I was not having a meaningful
+            impact on the world. I decided it was time to start a new chapter
+            and it was time to tackle all my demons . After seeking professional
+            support and putting in great work, I decided to evovle the After
+            Werk Brand, and help others by sharing tools and wisdom I had
+            learnt. I was dertmined to follow my dreams and build something that
+            promotes community, self love and self growth. Having grown up in a
+            different parts of Canada, I've mixed in maritime charm, B.C. buzz
+            and Montreal fun to the organization. The After Werk Community is
+            one where people lift themselves up and help each other set and
+            achieve goals. After Werk was founded on the idea that connecting
+            and engaging will help build a strong sense of community where folks
+            will feel more comfortable expressing themselves, seeking support
+            and grow as a result." <br /><br />-Jean-Gilles Paris&eacute;
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Popup  Project Section -->
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
-          <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+          <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img" />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-small">Bla Bla Bla</h2>
-            <h3 class="heading-tertiary u-margin-bottom-small">Important Bla bla &ndash; Bla Bla bla</h3>
-            <p class="popup__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa placerat duis ultricies lacus. In ante metus dictum at tempor commodo ullamcorper a lacus. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Purus semper eget duis at tellus. Ipsum a arcu cursus vitae congue mauris. Volutpat odio facilisis mauris sit amet massa vitae tortor. Ac felis donec et odio pellentesque diam volutpat commodo sed. Ac turpis egestas sed tempus urna. Ac odio tempor orci dapibus ultrices in iaculis nunc. Libero enim sed faucibus turpis. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Risus quis varius quam quisque id diam vel. Tellus cras adipiscing enim eu turpis. Molestie nunc non blandit massa enim nec. Adipiscing vitae proin sagittis nisl rhoncus mattis. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.
-            </p>
-            <!-- <a href="#" class="btn btn--green">Bla bla</a> -->
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important Bla bla &ndash; Bla Bla bla
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+            placerat duis ultricies lacus. In ante metus dictum at tempor
+            commodo ullamcorper a lacus. Pretium fusce id velit ut tortor
+            pretium viverra suspendisse potenti. Purus semper eget duis at
+            tellus. Ipsum a arcu cursus vitae congue mauris. Volutpat odio
+            facilisis mauris sit amet massa vitae tortor. Ac felis donec et odio
+            pellentesque diam volutpat commodo sed. Ac turpis egestas sed tempus
+            urna. Ac odio tempor orci dapibus ultrices in iaculis nunc. Libero
+            enim sed faucibus turpis. Tortor id aliquet lectus proin nibh nisl
+            condimentum id venenatis. Risus quis varius quam quisque id diam
+            vel. Tellus cras adipiscing enim eu turpis. Molestie nunc non
+            blandit massa enim nec. Adipiscing vitae proin sagittis nisl rhoncus
+            mattis. Volutpat consequat mauris nunc congue nisi vitae suscipit
+            tellus mauris.
+          </p>
+          <!-- <a href="#" class="btn btn--green">Bla bla</a> -->
         </div>
       </div>
     </div>
 
-
-
+    <script src="js/script.js"></script>
   </body>
 </html>
