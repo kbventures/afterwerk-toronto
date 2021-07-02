@@ -36,6 +36,14 @@
 
   &__logo {
     height: 12.5rem;
+
+    @include respond(tab-port) {
+      height: 11rem;
+    }
+
+    @include respond(phone) {
+      height: 10rem;
+    }
   }
 }
 
@@ -44,12 +52,15 @@
   The transform element is in relation to itself.
   */
 .header__text-box {
+  backdrop-filter: blur(1.5px);
+  border-radius: 10%;
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(3, 7, 13, 0.1);
-  padding: 3rem;
+  // background: rgba(3, 7, 13, 0.1);
+  // padding: 3rem;
+  padding: 3rem 2rem 0 2rem;
   text-align: center;
 
   &-primary {
@@ -58,4 +69,11 @@
     backface-visibility: hidden;
     margin-bottom: 3rem;
   }
+}
+
+.header__button-box {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
