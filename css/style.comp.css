@@ -105,13 +105,13 @@ body {
         letter-spacing: 1rem;
         font-family: 4rem; } }
   .heading-primary--sub1 {
-    background-color: rgba(80, 11, 57, 0.35);
     display: block;
     font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: 1.5rem;
     animation: moveInRight 1s ease-out;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+    line-height: 1.2; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub1 {
         letter-spacing: 0.5rem; } }
@@ -187,11 +187,12 @@ body {
     text-decoration: none;
     padding: 0.5rem 3rem;
     display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
     position: relative;
     font-weight: 700;
     font-size: 1.4rem;
+    box-shadow: 0 1rem 2rem rgba(243, 204, 227, 0.1);
     border: none;
     cursor: pointer; }
   .btn:hover {
@@ -206,12 +207,12 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--white {
     border: solid rgba(148, 11, 92, 0.35) 0.1rem;
-    background-color: #fff;
-    color: #777; }
+    background-color: #620740;
+    color: #fff; }
     .btn--white::after {
-      background-color: #fff; }
+      background-color: #620740; }
   .btn::after {
-    content: "";
+    content: '';
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -220,9 +221,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .btn--animated {
-    animation: moveInBottom .5s ease-out 0.75s;
+    animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
@@ -232,7 +233,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #fff;
   padding: 3px;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn-text:hover {
   background-color: #620740;
@@ -284,7 +285,6 @@ body {
           top: 1rem;
           transform: scale(1.1); } }
     .composition__photo:hover {
-      outline: 0.7rem solid #cd5a9d;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -1061,18 +1061,25 @@ body {
         margin-top: 10rem; } }
   .header__logo {
     height: 12.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        height: 11rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        height: 10rem; } }
 
 /*Absolute in relation to the parent element header
   which is relative to the body.  
   The transform element is in relation to itself.
   */
 .header__text-box {
+  backdrop-filter: blur(1.5px);
+  border-radius: 10%;
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(3, 7, 13, 0.1);
-  padding: 3rem;
+  padding: 3rem 2rem 0 2rem;
   text-align: center; }
   .header__text-box-primary {
     color: #fff;
@@ -1080,9 +1087,15 @@ body {
     backface-visibility: hidden;
     margin-bottom: 3rem; }
 
+.header__button-box {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .section-about {
   background-image: linear-gradient(to right, #940b5b, #10161f);
-  padding: 25rem 0;
+  padding: 23rem 0;
   margin-top: -12vh;
   border-bottom: solid 0.2rem #d02c83;
   border-left: solid 0.2rem #d02c83;
@@ -1090,6 +1103,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
+  .section-about__logo-box {
+    text-align: center; }
+  .section-about__logo {
+    height: 11rem; }
 
 .section-features {
   margin-top: -8rem;
@@ -1138,7 +1155,7 @@ body {
     padding: 6rem; }
   .book__logo {
     position: relative;
-    top: 21rem;
+    top: 19rem;
     right: 4rem;
     width: 30rem;
     height: auto; }
