@@ -1,0 +1,8 @@
+How to point your domain name to netlify: 
+https://www.youtube.com/watch?v=Q9giWrfIJKk
+
+Setting up a for for netlify: 
+https://docs.netlify.com/forms/setup/
+
+Animated Linear Gradient
+https://www.gradient-animator.com/
