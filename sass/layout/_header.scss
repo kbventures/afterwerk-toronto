@@ -30,7 +30,7 @@
       // transform: translate(-50%, -50%);
       position: static;
       text-align: center;
-      margin-top: 10rem;
+      margin-top: 11rem;
     }
   }
 
@@ -69,6 +69,10 @@
     backface-visibility: hidden;
     margin-bottom: 3rem;
   }
+
+  @include respond(phone) {
+    top: 63%;
+  }
 }
 
 .header__button-box {
@@ -76,4 +80,8 @@
   top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include respond(phone) {
+    top: 80%;
+  }
 }

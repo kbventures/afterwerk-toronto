@@ -23,6 +23,12 @@
   &__logo {
     height: 11rem;
   }
+
+  &__popupanchor {
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .section-features {
