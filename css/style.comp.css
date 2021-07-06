@@ -320,9 +320,9 @@ body {
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(148, 11, 91, 0.2);
   border: none;
-  border-bottom: 4px solid transparent;
+  border-bottom: px solid #f3cce3;
   width: 100%;
   display: block;
   transition: all 0.3s; }
