@@ -870,9 +870,9 @@ body {
 
 .navigation__nav {
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: -25%;
   z-index: 1500;
   opacity: 0;
   width: 0;
@@ -881,7 +881,7 @@ body {
 .navigation__list {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
