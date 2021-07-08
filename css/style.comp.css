@@ -700,20 +700,23 @@ body {
       .popupAbout__content {
         width: 100%; } }
   .popupAbout__left {
-    width: 33.333333%;
-    display: table-cell; }
+    width: 50%;
+    display: block;
+    margin: 4rem auto 0rem auto; }
+    @media only screen and (max-width: 75em) {
+      .popupAbout__left {
+        width: 60%;
+        display: block; } }
     @media only screen and (max-width: 56.25em) {
       .popupAbout__left {
-        width: 80%;
-        display: block;
-        margin: 2rem auto; } }
+        width: 70%;
+        display: block; } }
     @media only screen and (max-width: 37.5em) {
       .popupAbout__left {
-        width: 60%; } }
+        width: 80%; } }
   .popupAbout__right {
-    width: 66.6666667%;
-    display: table-cell;
-    vertical-align: middle;
+    width: 100%;
+    display: block;
     padding: 3rem 5rem; }
     @media only screen and (max-width: 56.25em) {
       .popupAbout__right {
@@ -767,7 +770,50 @@ body {
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  /*
+
+    &__left {
+    width: 50%;
+    display: block;
+    margin: 4rem auto 0rem auto;
+
+    @include respond(tab-land) {
+      width: 60%;
+      display: block;
+    }
+
+    @include respond(tab-port) {
+      width: 70%;
+      display: block;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    display: block;
+    // vertical-align: middle;
+    padding: 3rem 5rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      display: block;
+    }
+
+    @include respond(phone) {
+      padding: 1rem 3rem;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  */ }
   .popupStories__content {
     position: absolute;
     top: 50%;
@@ -786,17 +832,23 @@ body {
       .popupStories__content {
         width: 100%; } }
   .popupStories__left {
-    width: 33.333333%;
-    display: table-cell; }
+    width: 50%;
+    display: block;
+    margin: 2rem auto; }
+    @media only screen and (max-width: 75em) {
+      .popupStories__left {
+        width: 70%;
+        display: block; } }
     @media only screen and (max-width: 56.25em) {
       .popupStories__left {
-        display: block;
-        width: 45%;
-        margin: 2rem auto; } }
+        width: 60%;
+        display: block; } }
+    @media only screen and (max-width: 37.5em) {
+      .popupStories__left {
+        width: 70%; } }
   .popupStories__right {
-    width: 66.6666667%;
-    display: table-cell;
-    vertical-align: middle;
+    width: 100%;
+    display: block;
     padding: 3rem 5rem; }
     @media only screen and (max-width: 56.25em) {
       .popupStories__right {
