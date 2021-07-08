@@ -13,15 +13,23 @@
   }
 }
 
+.u-margin-top-small {
+  margin-top: 3rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 6rem !important;
+}
+
+.u-margin-top-large {
+  margin-top: 6rem !important;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
   @include respond(tab-port) {
     margin-bottom: 5rem !important;
   }
-}
-
-.u-margin-top-big {
-  margin-top: 8rem !important;
 }
 
 .u-margin-top-huge {
