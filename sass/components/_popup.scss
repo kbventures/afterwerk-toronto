@@ -128,24 +128,29 @@
   }
 
   &__left {
-    width: 33.333333%;
-    display: table-cell;
+    width: 50%;
+    display: block;
+    margin: 4rem auto 0rem auto;
+
+    @include respond(tab-land) {
+      width: 60%;
+      display: block;
+    }
 
     @include respond(tab-port) {
-      width: 80%;
+      width: 70%;
       display: block;
-      margin: 2rem auto;
     }
 
     @include respond(phone) {
-      width: 60%;
+      width: 80%;
     }
   }
 
   &__right {
-    width: 66.6666667%;
-    display: table-cell;
-    vertical-align: middle;
+    width: 100%;
+    display: block;
+    // vertical-align: middle;
     padding: 3rem 5rem;
 
     @include respond(tab-port) {
