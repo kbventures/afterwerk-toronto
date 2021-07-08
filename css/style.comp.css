@@ -834,7 +834,7 @@ body {
   .popupStories__left {
     width: 50%;
     display: block;
-    margin: 2rem auto; }
+    margin: 4rem auto 0rem auto; }
     @media only screen and (max-width: 75em) {
       .popupStories__left {
         width: 70%;
@@ -1079,10 +1079,13 @@ body {
     content: '';
     display: table;
     clear: both; }
+  @media only screen and (max-width: 75em) {
+    .row {
+      max-width: 100rem;
+      padding: 0 3rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
+      max-width: 90rem; } }
   .row [class^='col-'] {
     float: left; }
     .row [class^='col-']:not(:last-child) {

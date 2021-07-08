@@ -86,7 +86,7 @@
 }
 
 .section-book {
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-dark-grey, 0.95),
@@ -94,8 +94,13 @@
   );
   border: solid 0.2rem $color-border;
 
+  // @include respond(tab-land) {
+  //   padding: 10rem 0;
+  // }
+
   @include respond(tab-port) {
-    padding: 10rem 0;
+    padding-top: 3rem;
+    padding-bottom: 0;
   }
 }
 
@@ -120,7 +125,7 @@
   &__logo {
     position: relative;
     top: 24rem;
-    right: 3.5rem;
+    right: 3rem;
     width: 30rem;
     height: auto;
 

@@ -1081,7 +1081,7 @@ body {
     clear: both; }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
+      max-width: 93rem;
       padding: 0 3rem; } }
   .row [class^='col-'] {
     float: left; }
@@ -1215,12 +1215,13 @@ body {
       padding: 10rem 0; } }
 
 .section-book {
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(to right bottom, rgba(41, 28, 56, 0.95), rgba(18, 36, 66, 0.95));
   border: solid 0.2rem #d02c83; }
   @media only screen and (max-width: 56.25em) {
     .section-book {
-      padding: 10rem 0; } }
+      padding-top: 3rem;
+      padding-bottom: 0; } }
 
 .book {
   background-image: linear-gradient(105deg, #10161f 0%, #940b5b 100%), url(/img/nat-10.jpg);
@@ -1235,7 +1236,7 @@ body {
   .book__logo {
     position: relative;
     top: 24rem;
-    right: 3.5rem;
+    right: 3rem;
     width: 30rem;
     height: auto; }
     @media only screen and (max-width: 56.25em) {
