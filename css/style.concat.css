@@ -627,10 +627,10 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
   top: 50%;
+  right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
@@ -639,17 +639,30 @@ body {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 1.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 1.6 0rem;
   transition: all 0.3s ease;
   color: white;
   font-size: 3rem;
-  margin-left: 1rem; }
+  margin-right: 6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .icon-bar a {
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .icon-bar a {
+      font-size: 2.5rem;
+      margin-right: 2rem; } }
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #000; }
 
 .facebook {
+  color: white; }
+
+.instagram {
+  color: white; }
+
+.linkedin {
   color: white; }
 
 .btn {
