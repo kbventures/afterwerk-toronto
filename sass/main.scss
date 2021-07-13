@@ -1,9 +1,3 @@
-/*
-Although the name of this architecture is 7 to 1 we 
-we are only only using five since architecture
-and vendors are not used in this project.
-*/
-
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
@@ -13,6 +7,7 @@ and vendors are not used in this project.
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/social-icons';
 @import 'components/button';
 @import 'components/composition';
 @import 'components/feature-box';
@@ -21,18 +16,10 @@ and vendors are not used in this project.
 @import 'components/card';
 @import 'components/popup';
 
-
 @import 'layout/navigation';
-@import "layout/footer";
+@import 'layout/footer';
 
 @import 'layout/grid';
 @import 'layout/header';
 
-
 @import 'pages/home';
-
-
-/*
-animation-delay: 3s;
-animation-iteration-count:3;
-*/

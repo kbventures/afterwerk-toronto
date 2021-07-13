@@ -1,9 +1,4 @@
 /*
-Although the name of this architecture is 7 to 1 we 
-we are only only using five since architecture
-and vendors are not used in this project.
-*/
-/*
 0-600px;        PHONE
 600 - 900px;    Tablet portrait
 900 - 1200px;   Tablet landscape
@@ -185,6 +180,31 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 1.6rem;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 3rem;
+  margin-left: 1rem; }
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000; }
+
+.facebook {
+  color: white; }
 
 .btn {
   /* Animation 0.5secons, moveInButton keyframe east-out and 0.75s delay*/ }
@@ -1079,13 +1099,10 @@ body {
     content: '';
     display: table;
     clear: both; }
-  @media only screen and (max-width: 75em) {
-    .row {
-      max-width: 100rem;
-      padding: 0 3rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 90rem; } }
+      max-width: 93rem;
+      padding: 0 3rem; } }
   .row [class^='col-'] {
     float: left; }
     .row [class^='col-']:not(:last-child) {
@@ -1218,12 +1235,13 @@ body {
       padding: 10rem 0; } }
 
 .section-book {
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(to right bottom, rgba(41, 28, 56, 0.95), rgba(18, 36, 66, 0.95));
   border: solid 0.2rem #d02c83; }
   @media only screen and (max-width: 56.25em) {
     .section-book {
-      padding: 10rem 0; } }
+      padding-top: 3rem;
+      padding-bottom: 0; } }
 
 .book {
   background-image: linear-gradient(105deg, #10161f 0%, #940b5b 100%), url(/img/nat-10.jpg);
@@ -1238,14 +1256,9 @@ body {
   .book__logo {
     position: relative;
     top: 24rem;
-    right: 3.5rem;
+    right: 3rem;
     width: 30rem;
     height: auto; }
     @media only screen and (max-width: 56.25em) {
       .book__logo {
         display: none; } }
-
-/*
-animation-delay: 3s;
-animation-iteration-count:3;
-*/
