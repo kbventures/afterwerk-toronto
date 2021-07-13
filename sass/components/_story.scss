@@ -38,7 +38,7 @@
     }
 
     @include respond(phone) {
-      transform: translate(0) skewX(0);
+      transform: translateX(-3rem) skewX(0);
     }
   }
 
@@ -50,7 +50,6 @@
   }
   &__text {
     transform: skewX(12deg);
-
     @include respond(phone) {
       transform: skewX(0);
     }

@@ -497,7 +497,7 @@ body {
         border-radius: none; } }
     @media only screen and (max-width: 37.5em) {
       .story__shape {
-        transform: translate(0) skewX(0); } }
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     transform: scale(1);

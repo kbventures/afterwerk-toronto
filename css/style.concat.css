@@ -634,7 +634,7 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: rgba(27, 73, 136, 0.5);
+  background-color: rgba(27, 73, 136, 0.2);
   margin-right: 3.1rem;
   border-radius: 5px; }
   @media only screen and (max-width: 56.25em) {
@@ -646,13 +646,11 @@ body {
   display: block;
   text-align: center;
   padding: 1.6rem 1.6rem 1.6rem 1.6rem;
-  transition: all 0.3s ease;
   color: white;
   font-size: 3rem; }
 
 /* Style the social media icons with color, if you want */
 #home .icon-bar a:hover {
-  padding: 0.5rem;
   background-color: rgba(33, 33, 33, 0.5); }
 
 #home .facebook {
@@ -955,6 +953,7 @@ body {
     transform: skewX(12deg); }
     @media only screen and (max-width: 37.5em) {
       .story__text {
+        height: 0%;
         transform: skewX(0); } }
   .story__caption {
     position: absolute;
