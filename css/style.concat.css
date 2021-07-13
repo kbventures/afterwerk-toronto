@@ -633,7 +633,13 @@ body {
   right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  background-color: rgba(27, 73, 136, 0.5);
+  margin-right: 3.1rem;
+  border-radius: 5px; }
+  @media only screen and (max-width: 56.25em) {
+    #home .icon-bar {
+      margin-right: 0; } }
 
 /* Style the icon bar links */
 #home .icon-bar a {
@@ -642,20 +648,12 @@ body {
   padding: 1.6rem 1.6rem 1.6rem 1.6rem;
   transition: all 0.3s ease;
   color: white;
-  font-size: 3rem;
-  margin-right: 6rem; }
-  @media only screen and (max-width: 56.25em) {
-    #home .icon-bar a {
-      margin-right: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    #home .icon-bar a {
-      font-size: 2.5rem;
-      margin-right: 2rem; } }
+  font-size: 3rem; }
 
 /* Style the social media icons with color, if you want */
 #home .icon-bar a:hover {
   padding: 0.5rem;
-  background-color: #000; }
+  background-color: rgba(33, 33, 33, 0.5); }
 
 #home .facebook {
   color: white; }
