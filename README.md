@@ -17,7 +17,9 @@ After Werk is a lifestyle brand dedicated to being your best outside work. We en
 ## Optimizations
 
 Lighhouse scan items pending
+<br>
 Webpack to offer more perfomant builds
+<br>
 Moving images to https://cloudinary.com/ toimprove performance
 
 ## Lessons Learned:
