@@ -5,7 +5,7 @@ After Werk is a lifestyle brand dedicated to being your best outside work. We en
 **Website:** https://afterwerk.netlify.app/
 
 <a target="_blank" href="https://afterwerk.netlify.app/">
-    <p align="center" height="300px">
+    <p align="center" height="00px">
     <img src="img/After_werk_logo.jpg"/>
     </p>
 </a>
